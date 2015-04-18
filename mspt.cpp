@@ -287,7 +287,7 @@ template<class T> class Graph
 				root1 = currentIndex;
 
 
-				//second loop to try to make all the parents of v1 as roo1 in order to make the tree more wide and less deep
+				//second loop to try to make all the parents of v1 as roo1 in order to compress the height
 				currentIndex = v1;
 				while(forestIndex[currentIndex] != -1)
 				{
@@ -308,7 +308,7 @@ template<class T> class Graph
 				root2 = currentIndex;	
 
 
-				//second loop to try to make all the parents of v2 as roo2 in order to make the tree more wide and less deep
+				//second loop to try to make all the parents of v2 as roo2 in order to compress the height
 				currentIndex = v2;
 				while(forestIndex[currentIndex] != -1)
 				{
